@@ -1,0 +1,105 @@
+.modal-content {
+    width: 1140px !important;
+    left: -58%;
+    // z-index: 99999999999999999999999999;
+}
+
+.modal-content.edit {
+    width: 500px !important;
+    left: 0%;
+}
+
+label.col-4 {
+    font-weight: 500;
+    text-align: right;
+}
+
+.row.form-group {
+    margin: 10px;
+}
+
+.modal-header {
+    background-color: #f3f3f3;
+    .modal-title {
+        font-weight: 450;
+    }
+}
+
+.col-4.text-right {
+    font-weight: 500;
+}
+
+.checkmark {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border: 1px solid #3b86ff;
+    border-radius: 2px;
+    left: 3%;
+    top: 16%;
+    background-color: #fff;
+}
+
+.divCheck input:checked ~ .checkmark {
+    background-color: #3b86ff;
+}
+
+.divCheck input:checked ~ .checkmark::after {
+    display: block;
+}
+
+.divCheck .checkmark::after {
+    position: absolute;
+    content: "";
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #ddd;
+    transition: 0.4s;
+}
+
+.slider.round {
+    border-radius: 34px;
+    width: 52px;
+    height: 12px;
+    top: 62%;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0;
+    bottom: -4px;
+    background-color: #b5b5b5;
+    transition: 0.4s;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(30px);
+    background-color: #981a1e;
+}
+
+.switch input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}

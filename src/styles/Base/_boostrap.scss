@@ -1,0 +1,24 @@
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.form-control {
+    font-size: 14px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: none;
+}
+
+.btn-info:focus {
+    box-shadow: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+// .row {
+//     margin-right: 0px;
+//     margin-left: 0px;
+// }

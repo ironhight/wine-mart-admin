@@ -1,0 +1,104 @@
+.header_winemart {
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.19);
+    z-index: 5;
+    background: #fff;
+    line-height: 64px;
+    position: fixed;
+    top: 0px;
+}
+.header__left > img {
+    width: 20px;
+    height: 20px;
+    margin-top: -5px;
+    margin-left: 14px;
+}
+.header__left > img:hover {
+    border-bottom: 1.5px solid black;
+}
+/* HEADER RIGHT */
+.header__right {
+    /* float: right; */
+}
+.dropdown-toggle::after {
+    border: none;
+}
+.header__right_dropdown-toggle {
+    width: 60px;
+    float: right;
+    margin-right: 255px;
+    padding-left: 15px;
+}
+.header__right_dropdown-toggle:hover {
+    height: 63px;
+    background: #f3f3f3;
+}
+.header__right_dropdown-toggle > img {
+    width: 30px;
+    height: 30px;
+}
+.header__right_dropdown-item {
+    z-index: 4;
+    min-width: 170px;
+    text-align: center;
+    transition: step-start 2s;
+    border-radius: 5px;
+    transform: ease;
+    background: #f3f3f3;
+
+    background: #f3f3f3;
+}
+.header__right_dropdown-item:hover {
+    background-color: none;
+}
+.dropdown-menu {
+    padding: 0px;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+    background: #f3f3f3;
+}
+.header__right_dropdown_item_box1 {
+    width: 100%;
+    margin: 0px;
+}
+.header__right_dropdown_item_box1-img > img {
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    padding: 0px;
+}
+.header__right_dropdown_item_box1-name > p {
+    margin-bottom: 5px;
+    height: auto;
+    font-size: 16px;
+    line-height: normal;
+}
+.header__right_dropdown_item_box2-btn-profile {
+    font-size: 14px;
+    margin-top: 14px;
+    padding: 4px 0px;
+    line-height: normal;
+    text-align: left;
+}
+.header__right_dropdown_item_box2-btn-profile > button {
+    border: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+    height: 30px;
+}
+.header__right_dropdown_item_box2-btn-logout {
+    font-size: 14px;
+    margin-top: 14px;
+    padding: 4px 0px;
+    line-height: normal;
+    text-align: right;
+}
+.header__right_dropdown_item_box2-btn-logout > button {
+    border: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+    height: 30px;
+}

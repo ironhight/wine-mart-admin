@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  font-size: 14px; }
+
+.table td,
+.table th {
+  vertical-align: middle; }
+
+.form-control {
+  font-size: 14px; }
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: none; }
+
+.btn-info:focus {
+  box-shadow: none; }
+
+.modal-footer {
+  border-top: none; }
+
+.input-group.mr-1 {
+  width: auto;
+  margin: 0;
+  font-size: 14px;
+  height: 36px; }
+  .input-group.mr-1 .input-group-addon {
+    cursor: pointer;
+    border: 1px solid rgba(173, 185, 202, 0.3);
+    border-right: 0;
+    padding: 3px 0 3px 10px;
+    height: 36px; }
+    .input-group.mr-1 .input-group-addon img {
+      width: 15px;
+      margin-top: 5px; }
+  .input-group.mr-1 input {
+    border: 1px solid rgba(173, 185, 202, 0.3);
+    border-left: 0;
+    opacity: 0.6; }
+
+.input-group.mr-1 input:focus {
+  border: 1px solid rgba(173, 185, 202, 0.3);
+  border-left: none;
+  box-shadow: none;
+  outline: none; }
+
+.form-row {
+  margin-left: 0px; }
+
+.page {
+  padding: 20px;
+  margin: 20px 10px;
+  background: white; }
+
+.order__title.row .col-8 h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  color: #981a1e; }
+.order__title.row .col-8 .order__infor {
+  padding: 20px;
+  background-color: white; }
+  .order__title.row .col-8 .order__infor .order__infor__title {
+    font-size: 18px;
+    font-weight: bold; }
+  .order__title.row .col-8 .order__infor .order__infor__select {
+    display: flex;
+    flex-direction: row; }
+    .order__title.row .col-8 .order__infor .order__infor__select .order__infor__select--number {
+      display: flex;
+      border: 1px solid rgba(173, 185, 202, 0.3);
+      width: 150px;
+      height: 40px; }
+      .order__title.row .col-8 .order__infor .order__infor__select .order__infor__select--number div {
+        text-align: center;
+        top: 8px;
+        position: relative;
+        width: 78px; }
+      .order__title.row .col-8 .order__infor .order__infor__select .order__infor__select--number input {
+        width: 70px;
+        align-items: flex-end;
+        border: none;
+        border-left: 1px solid rgba(173, 185, 202, 0.3);
+        padding: 10px; }
+    .order__title.row .col-8 .order__infor .order__infor__select .order__infor__select--product {
+      display: flex;
+      border: 1px solid rgba(173, 185, 202, 0.3);
+      width: 201px;
+      height: 40px;
+      border-right: none;
+      margin-left: 10px; }
+      .order__title.row .col-8 .order__infor .order__infor__select .order__infor__select--product div {
+        text-align: center;
+        top: 8px;
+        position: relative;
+        width: 78px;
+        left: 12px; }
+      .order__title.row .col-8 .order__infor .order__infor__select .order__infor__select--product .form-group {
+        width: 165px;
+        align-items: flex-end;
+        border: none;
+        padding: 10px;
+        top: -27%;
+        left: 7%; }
+        .order__title.row .col-8 .order__infor .order__infor__select .order__infor__select--product .form-group .form-control {
+          height: 40px;
+          width: 151px; }
+.order__title.row .col-8 .order__infor__unit {
+  float: right; }
+.order__title.row .col-8 .order__infor__tableProduct table {
+  border-collapse: collapse;
+  border: 1px solid rgba(173, 185, 202, 0.3); }
+  .order__title.row .col-8 .order__infor__tableProduct table th {
+    background-color: #f3f6f9;
+    border: 1px solid rgba(173, 185, 202, 0.3); }
+.order__title.row .col-8 .delivery__infor {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__title {
+    font-size: 18px;
+    font-weight: bold; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__address label {
+    margin-right: 50px;
+    padding-left: 35px;
+    cursor: pointer; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__address input {
+    opacity: 0;
+    cursor: pointer; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__address .checkmark {
+    position: absolute;
+    top: 61%;
+    left: 4%;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #bebfbf; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__address input:checked ~ .checkmark {
+    background-color: transparent; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__address .checkmark:after {
+    top: 20%;
+    left: 19%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #981a1e;
+    display: none;
+    position: absolute;
+    content: ""; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__address input:checked ~ .checkmark::after {
+    display: block; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__input .delivery__infor__input--text {
+    display: flex; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__input .delivery__infor__input--text span {
+      background-color: #e9ecef;
+      padding: 9px 10px 0px 10px; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__input .delivery__infor__input--text input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid rgba(173, 185, 202, 0.3); }
+      .order__title.row .col-8 .delivery__infor .delivery__infor__input .delivery__infor__input--text input:focus {
+        outline: none; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__select {
+    margin-top: 15px; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__live {
+    margin-top: 15px;
+    display: flex;
+    font-size: 16px; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--home label {
+      margin-right: 50px;
+      padding-left: 35px;
+      cursor: pointer; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--home input {
+      opacity: 0;
+      cursor: pointer; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--home .checkmark {
+      position: absolute;
+      top: 83.5%;
+      left: 4%;
+      height: 18px;
+      width: 18px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 1px solid #bebfbf; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--home input:checked ~ .checkmark {
+      background-color: transparent; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--home .checkmark:after {
+      top: 19%;
+      left: 20%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #981a1e;
+      display: none;
+      position: absolute;
+      content: ""; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--home input:checked ~ .checkmark::after {
+      display: block; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--company label {
+      margin-right: 50px;
+      padding-left: 1px;
+      cursor: pointer; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--company input {
+      opacity: 0;
+      cursor: pointer; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--company .checkmark {
+      position: absolute;
+      top: 83.5%;
+      left: 20%;
+      height: 18px;
+      width: 18px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 1px solid #bebfbf; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--company input:checked ~ .checkmark {
+      background-color: transparent; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--company .checkmark:after {
+      top: 19%;
+      left: 17%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #981a1e;
+      display: none;
+      position: absolute;
+      content: ""; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__live .delivery__infor__live--company input:checked ~ .checkmark::after {
+      display: block; }
+  .order__title.row .col-8 .delivery__infor .delivery__infor__time {
+    margin-top: 20px; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__time h5 {
+      font-size: 18px;
+      font-weight: bold; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__time span {
+      background-color: #e9ecef;
+      padding: 10px 9px 11px 10px; }
+    .order__title.row .col-8 .delivery__infor .delivery__infor__time input {
+      padding: 9px;
+      background-color: #e9ecef;
+      border: none;
+      border-left: 1px solid #e9ecef; }
+.order__title.row .col-4 .customer {
+  padding: 20px;
+  margin: 36px 20px 20px 20px;
+  background-color: #fff; }
+.order__title.row .col-4 .promotion {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff; }
+.order__title.row .col-4 .pay {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff; }
+  .order__title.row .col-4 .pay h5 {
+    font-size: 18px;
+    font-weight: bold; }
+  .order__title.row .col-4 .pay .pay__item .pay__content--note textarea {
+    width: 100%; }
+.order__title.row .col-4 .btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  color: white;
+  background-color: #981a1e; }
+
+input#search_name_and_phone {
+  width: 224px; }
+
+.modal-content {
+  width: 1140px !important;
+  left: -58%; }
+
+.modal-content.edit {
+  width: 500px !important;
+  left: 0%; }
+
+label.col-4 {
+  font-weight: 500;
+  text-align: right; }
+
+.row.form-group {
+  margin: 10px; }
+
+.modal-header {
+  background-color: #f3f3f3; }
+  .modal-header .modal-title {
+    font-weight: 450; }
+
+.col-4.text-right {
+  font-weight: 500; }
+
+.checkmark {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  border: 1px solid #3b86ff;
+  border-radius: 2px;
+  left: 3%;
+  top: 16%;
+  background-color: #fff; }
+
+.divCheck input:checked ~ .checkmark {
+  background-color: #3b86ff; }
+
+.divCheck input:checked ~ .checkmark::after {
+  display: block; }
+
+.divCheck .checkmark::after {
+  position: absolute;
+  content: "";
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #ddd;
+  transition: 0.4s; }
+
+.slider.round {
+  border-radius: 34px;
+  width: 52px;
+  height: 12px;
+  top: 62%; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0;
+  bottom: -4px;
+  background-color: #b5b5b5;
+  transition: 0.4s; }
+
+.switch input:checked + .slider::before {
+  transform: translateX(30px);
+  background-color: #981a1e; }
+
+.switch input {
+  opacity: 0;
+  height: 0;
+  width: 0; }

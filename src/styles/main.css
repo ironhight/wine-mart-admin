@@ -1,0 +1,37 @@
+.table td,
+.table th {
+  vertical-align: middle; }
+
+.form-control {
+  font-size: 14px; }
+
+.form-control:focus {
+  box-shadow: none; }
+
+.btn-info:focus {
+  box-shadow: none; }
+
+.input-group.mr-1 {
+  width: auto;
+  margin: 0;
+  font-size: 14px;
+  height: 36px; }
+  .input-group.mr-1 .input-group-addon {
+    cursor: pointer;
+    border: 1px solid rgba(173, 185, 202, 0.3);
+    border-right: 0;
+    padding: 3px 0 3px 10px; }
+    .input-group.mr-1 .input-group-addon img {
+      width: 15px;
+      margin-top: 5px; }
+  .input-group.mr-1 input {
+    border: 1px solid rgba(173, 185, 202, 0.3);
+    border-left: 0; }
+
+.form-row {
+  margin-left: 0px; }
+
+.page {
+  margin: 130px 20px 0px 20px; }
+
+/*# sourceMappingURL=main.css.map */

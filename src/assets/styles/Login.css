@@ -1,0 +1,80 @@
+body{
+    background: #ebebeb;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.layout__login{
+    margin-top: 8%;
+    
+}
+.layout__login-box{
+    padding: 2% 12%;
+   
+}
+.layout__login-box2{
+   border:1px solid #cccccc;
+   background-color: white;
+   padding: 40px 50px;
+   border-radius: 5px;
+}
+.layout__login-header{
+   text-align: center;
+
+}
+.layout__login--header-title>p{
+    font-family: inherit;
+    font-weight: 500;
+    color: #333333;
+}
+.layout__login-content{
+    margin-top: 25px;
+}
+.layout__login-content-input{
+   padding: 0px;
+   margin-bottom: 10px;
+  
+}
+.layout__login-content-input>input{
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    font: inherit;
+    outline: none;
+}
+.layout__login-content-input>input:focus{
+    border-color: #3c763d;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+}
+.layout__login-content-input--noblank{
+ 
+    border: 1.1px solid #3c763d !important;
+    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168 !important; */
+}
+
+
+.layout__login-content-input>p{
+    color: #a94442;
+
+}
+
+.layout__login-footer-button{
+    padding: 0px;
+}
+.layout__login-footer-button>button{
+    width: 100%;
+    background-color: #981a1e;
+    border-color: #981a1e;
+    height: 2.7em;
+    border-radius: 4px;
+    color: white !important;
+    height: 40px;
+    border: none;
+    outline: none;
+}

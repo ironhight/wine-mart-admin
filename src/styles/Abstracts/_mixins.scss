@@ -1,0 +1,47 @@
+@mixin btn(
+  $top-check-mark,
+  $left-check-mark,
+  $top-check-mark-after,
+  $left-check-mark-after,
+  $label-padding-left
+) {
+  label {
+    margin-right: 50px;
+    padding-left: $label-padding-left;
+    cursor: pointer;
+  }
+
+  input {
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: $top-check-mark;
+    left: $left-check-mark;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #bebfbf;
+  }
+
+  input:checked ~ .checkmark {
+    background-color: transparent;
+  }
+  .checkmark:after {
+    top: $top-check-mark-after;
+    left: $left-check-mark-after;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #981a1e;
+    display: none;
+    position: absolute;
+    content: "";
+  }
+
+  input:checked ~ .checkmark::after {
+    display: block;
+  }
+}

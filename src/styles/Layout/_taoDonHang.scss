@@ -1,0 +1,203 @@
+.order__title.row {
+    //   position: relative;
+
+    .col-8 {
+        h4 {
+            font-family: "Roboto", sans-serif;
+            font-size: 22px;
+            color: #981a1e;
+            //   font-weight: bold;
+        }
+
+        .order__infor {
+            // position: absolute;
+            padding: 20px;
+            background-color: white;
+            .order__infor__title {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .order__infor__select {
+                display: flex;
+                flex-direction: row;
+
+                .order__infor__select--number {
+                    display: flex;
+                    border: 1px solid rgba(173, 185, 202, 0.3);
+                    width: 150px;
+                    height: 40px;
+                    div {
+                        text-align: center;
+                        top: 8px;
+                        position: relative;
+                        width: 78px;
+                    }
+                    input {
+                        width: 70px;
+                        align-items: flex-end;
+                        border: none;
+                        border-left: 1px solid rgba(173, 185, 202, 0.3);
+                        padding: 10px;
+                    }
+                }
+                .order__infor__select--product {
+                    display: flex;
+                    border: 1px solid rgba(173, 185, 202, 0.3);
+                    width: 201px;
+                    height: 40px;
+                    border-right: none;
+                    margin-left: 10px;
+                    div {
+                        text-align: center;
+                        top: 8px;
+                        position: relative;
+                        width: 78px;
+                        left: 12px;
+                    }
+                    .form-group {
+                        width: 165px;
+                        align-items: flex-end;
+                        border: none;
+                        // border-left: 1px solid rgba(173, 185, 202, 0.3);
+                        padding: 10px;
+                        top: -27%;
+                        left: 7%;
+                        .form-control {
+                            height: 40px;
+                            width: 151px;
+                        }
+                        // select {
+                        //   top: -5%;
+                        //   position: absolute;
+                        // }
+                    }
+                }
+            }
+        }
+
+        .order__infor__unit {
+            float: right;
+        }
+
+        .order__infor__tableProduct {
+            table {
+                border-collapse: collapse;
+                border: 1px solid rgba(173, 185, 202, 0.3);
+                th {
+                    background-color: #f3f6f9;
+                    border: 1px solid rgba(173, 185, 202, 0.3);
+                }
+                // td {
+                //   float: right;
+                //   border: 1px solid rgba(173, 185, 202, 0.3);
+                // }
+            }
+        }
+
+        .delivery__infor {
+            .delivery__infor__title {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .delivery__infor__address {
+                @include btn(61%, 4%, 20%, 19%, 35px);
+            }
+
+            .delivery__infor__input {
+                .delivery__infor__input--text {
+                    display: flex;
+                    span {
+                        background-color: #e9ecef;
+                        padding: 9px 10px 0px 10px;
+                    }
+                    input {
+                        width: 100%;
+                        padding: 8px;
+                        border: 1px solid rgba(173, 185, 202, 0.3);
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            .delivery__infor__select {
+                margin-top: 15px;
+            }
+
+            .delivery__infor__live {
+                margin-top: 15px;
+                display: flex;
+                font-size: 16px;
+
+                .delivery__infor__live--home {
+                    @include btn(83.5%, 4%, 19%, 20%, 35px);
+                }
+
+                .delivery__infor__live--company {
+                    @include btn(83.5%, 20%, 19%, 17%, 1px);
+                }
+            }
+
+            .delivery__infor__time {
+                margin-top: 20px;
+                h5 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                span {
+                    background-color: #e9ecef;
+                    padding: 10px 9px 11px 10px;
+                }
+                input {
+                    padding: 9px;
+                    background-color: #e9ecef;
+                    border: none;
+                    border-left: 1px solid #e9ecef;
+                }
+            }
+
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+    }
+
+    .col-4 {
+        .customer {
+            padding: 20px;
+            margin: 36px 20px 20px 20px;
+            background-color: #fff;
+        }
+        .promotion {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+        }
+        .pay {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            h5 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .pay__item {
+                .pay__content--note {
+                    textarea {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .btn {
+            width: 100%;
+            font-size: 16px;
+            padding: 10px;
+            color: white;
+            background-color: #981a1e;
+        }
+    }
+}
